@@ -1,4 +1,4 @@
-# Project Quickstart Guide
+# CS744 Project - Key Value Server
 
 This README provides the essential steps to get the project's server and database running and how to interact with the server using the client.
 
@@ -18,7 +18,7 @@ Before you start, ensure you have the following installed on your system:
 
 ### 1\. Launch the Server and Database
 
-Use Docker Compose to build the necessary images and run the **PostgreSQL database** and the **server** in detached mode (in the background):
+Use Docker Compose to build the necessary images and run the **PostgreSQL database** and the **Key Value Server** in detached mode (in the background):
 
 ```bash
 docker compose up --build -d
@@ -37,9 +37,3 @@ python client.py
 ```
 
 -----
-
-That's it\! You should now have the backend services running and a way to interact with them.
-
------
-
-Is there anything else you'd like to add or change in this README?
