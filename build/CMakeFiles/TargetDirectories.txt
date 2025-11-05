@@ -1,0 +1,8 @@
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/CMakeFiles/edit_cache.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/CMakeFiles/rebuild_cache.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/server/CMakeFiles/kv_server.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/server/CMakeFiles/edit_cache.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/server/CMakeFiles/rebuild_cache.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/load_generator/CMakeFiles/load_generator.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/load_generator/CMakeFiles/edit_cache.dir
+/home/ziyad/Desktop/DECS/cs744-kv-server/build/load_generator/CMakeFiles/rebuild_cache.dir

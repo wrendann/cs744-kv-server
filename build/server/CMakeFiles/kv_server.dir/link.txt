@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/kv_server.dir/src/server.cpp.o CMakeFiles/kv_server.dir/src/database.cpp.o CMakeFiles/kv_server.dir/src/singlelocklrucache.cpp.o CMakeFiles/kv_server.dir/src/shardedlrucache.cpp.o -o kv_server  -lpqxx 

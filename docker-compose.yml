@@ -1,0 +1,51 @@
+services:
+  postgres_db:
+    image: postgres:15
+    container_name: kv_postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: kvstore
+    volumes:
+      - pg_data:/var/lib/postgresql/data 
+    networks:
+      - kv_network
+    restart: always
+
+  kv_server_app:
+    build: 
+      context: .
+      dockerfile: Dockerfile.server 
+    container_name: kv_server
+    ports:
+      - "8080:8080" 
+    networks:
+      - kv_network
+    depends_on:
+      - postgres_db
+    environment:
+      DB_HOST: postgres_db 
+      DB_PORT: 5432
+    restart: always
+    cpuset: '0-1'
+
+  load_generator:
+    build: 
+      context: .
+      dockerfile: Dockerfile.client 
+    container_name: load_generator
+    networks:
+      - kv_network
+    depends_on:
+      - kv_server_app 
+    environment:
+      SERVER_HOST: kv_server
+      SERVER_PORT: 8080
+    cpuset: '2-5'
+
+networks:
+  kv_network:
+    driver: bridge
+
+volumes:
+  pg_data:
