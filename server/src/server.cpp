@@ -6,11 +6,20 @@
 #include "database.hpp"
 #include "lrucache.hpp"
 
-int main() {
+int main(int argc, char** argv) {
     const int CACHE_SIZE = 1024;
     const int NO_OF_SHARDS = 16;
     
     httplib::Server svr;
+    svr.set_keep_alive_timeout(3);
+    svr.set_keep_alive_max_count(50);
+    svr.set_tcp_nodelay(true);
+
+    if(argc > 1)
+    {
+        int num_threads = std::stoi(argv[1]);
+        svr.new_task_queue = [num_threads] { return new httplib::ThreadPool(num_threads); };
+    }
 
     using json = nlohmann::json;
 

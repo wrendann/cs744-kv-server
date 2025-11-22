@@ -12,4 +12,4 @@ RUN mkdir build && cd build && \
     cmake .. && \
     make
 
-CMD ["/app/build/server/kv_server"]
+CMD ["tail", "-f", "/dev/null"]

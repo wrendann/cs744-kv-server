@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/load_generator.dir/src/put_all.cpp.o.d"
   "CMakeFiles/load_generator.dir/src/requests.cpp.o"
   "CMakeFiles/load_generator.dir/src/requests.cpp.o.d"
+  "CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o"
+  "CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o.d"
   "load_generator"
   "load_generator.pdb"
 )

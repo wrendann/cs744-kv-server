@@ -11,6 +11,8 @@ void thread_put_all(std::atomic<bool> &stop_flag, LoadTestResult* result)
 {
     std::unordered_set<std::string> local_keys;
     httplib::Client cli("http://kv_server:8080");
+    cli.set_keep_alive(true);
+    cli.set_tcp_nodelay(true);
     cli.set_connection_timeout(5); 
     cli.set_read_timeout(5);
     while (!stop_flag) {

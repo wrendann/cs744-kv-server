@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/get_put.cpp" "load_generator/CMakeFiles/load_generator.dir/src/get_put.cpp.o" "gcc" "load_generator/CMakeFiles/load_generator.dir/src/get_put.cpp.o.d"
   "/home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/put_all.cpp" "load_generator/CMakeFiles/load_generator.dir/src/put_all.cpp.o" "gcc" "load_generator/CMakeFiles/load_generator.dir/src/put_all.cpp.o.d"
   "/home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/requests.cpp" "load_generator/CMakeFiles/load_generator.dir/src/requests.cpp.o" "gcc" "load_generator/CMakeFiles/load_generator.dir/src/requests.cpp.o.d"
+  "/home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/resource_monitor.cpp" "load_generator/CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o" "gcc" "load_generator/CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,10 +1,12 @@
 #include "load_generation.hpp"
+#include "resource_monitor.hpp"
 #include <thread>
 #include <string>
 #include <atomic>
 #include <vector>
 #include <chrono>
 #include <iostream>
+
 
 #define TOTAL_PAIRS 1000
 #define POPULAR_PAIRS 100
@@ -13,6 +15,8 @@ void thread_get_popular(std::atomic<bool> &stop_flag, LoadTestResult* result,
     const std::vector<std::pair<std::string, std::string>> &key_value_store)
 {
     httplib::Client cli("http://kv_server:8080");
+    cli.set_keep_alive(true);
+    cli.set_tcp_nodelay(true);
     cli.set_connection_timeout(5); 
     cli.set_read_timeout(5);
     int index = 0;

@@ -298,6 +298,30 @@ src/requests.cpp.s:
 	cd /home/ziyad/Desktop/DECS/cs744-kv-server/build && $(MAKE) $(MAKESILENT) -f load_generator/CMakeFiles/load_generator.dir/build.make load_generator/CMakeFiles/load_generator.dir/src/requests.cpp.s
 .PHONY : src/requests.cpp.s
 
+src/resource_monitor.o: src/resource_monitor.cpp.o
+.PHONY : src/resource_monitor.o
+
+# target to build an object file
+src/resource_monitor.cpp.o:
+	cd /home/ziyad/Desktop/DECS/cs744-kv-server/build && $(MAKE) $(MAKESILENT) -f load_generator/CMakeFiles/load_generator.dir/build.make load_generator/CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o
+.PHONY : src/resource_monitor.cpp.o
+
+src/resource_monitor.i: src/resource_monitor.cpp.i
+.PHONY : src/resource_monitor.i
+
+# target to preprocess a source file
+src/resource_monitor.cpp.i:
+	cd /home/ziyad/Desktop/DECS/cs744-kv-server/build && $(MAKE) $(MAKESILENT) -f load_generator/CMakeFiles/load_generator.dir/build.make load_generator/CMakeFiles/load_generator.dir/src/resource_monitor.cpp.i
+.PHONY : src/resource_monitor.cpp.i
+
+src/resource_monitor.s: src/resource_monitor.cpp.s
+.PHONY : src/resource_monitor.s
+
+# target to generate assembly for a file
+src/resource_monitor.cpp.s:
+	cd /home/ziyad/Desktop/DECS/cs744-kv-server/build && $(MAKE) $(MAKESILENT) -f load_generator/CMakeFiles/load_generator.dir/build.make load_generator/CMakeFiles/load_generator.dir/src/resource_monitor.cpp.s
+.PHONY : src/resource_monitor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -328,6 +352,9 @@ help:
 	@echo "... src/requests.o"
 	@echo "... src/requests.i"
 	@echo "... src/requests.s"
+	@echo "... src/resource_monitor.o"
+	@echo "... src/resource_monitor.i"
+	@echo "... src/resource_monitor.s"
 .PHONY : help
 
 
