@@ -4,6 +4,8 @@
 #include <cmath>
 #include <unistd.h>
 #include <iomanip>
+#include <iostream>
+#include <thread>
 
 std::vector<MetricSnapshot> monitoring_data;
 
