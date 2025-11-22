@@ -64,11 +64,5 @@
   "command": "/usr/bin/g++  -I/home/ziyad/Desktop/DECS/cs744-kv-server/include -g -std=gnu++17 -o CMakeFiles/load_generator.dir/src/get_put.cpp.o -c /home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/get_put.cpp",
   "file": "/home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/get_put.cpp",
   "output": "load_generator/CMakeFiles/load_generator.dir/src/get_put.cpp.o"
-},
-{
-  "directory": "/home/ziyad/Desktop/DECS/cs744-kv-server/build/load_generator",
-  "command": "/usr/bin/g++  -I/home/ziyad/Desktop/DECS/cs744-kv-server/include -g -std=gnu++17 -o CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o -c /home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/resource_monitor.cpp",
-  "file": "/home/ziyad/Desktop/DECS/cs744-kv-server/load_generator/src/resource_monitor.cpp",
-  "output": "load_generator/CMakeFiles/load_generator.dir/src/resource_monitor.cpp.o"
 }
 ]

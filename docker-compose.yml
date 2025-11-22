@@ -11,6 +11,7 @@ services:
     networks:
       - kv_network
     restart: always
+    cpuset: '0-1'
 
   kv_server_app:
     build: 
@@ -27,7 +28,7 @@ services:
       DB_HOST: postgres_db 
       DB_PORT: 5432
     restart: always
-    cpuset: '0-1'
+    cpuset: '2'
     ulimits:
       nofile:
         soft: 65536
@@ -47,7 +48,7 @@ services:
     environment:
       SERVER_HOST: kv_server
       SERVER_PORT: 8080
-    cpuset: '2-5'
+    cpuset: '3-6'
 
 networks:
   kv_network:

@@ -1,5 +1,4 @@
 #include "load_generation.hpp"
-#include "resource_monitor.hpp"
 #include <thread>
 #include <string>
 #include <atomic>
